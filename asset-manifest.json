@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/scitech-support-app/static/js/main.e33c06df.js",
+    "main.js": "/scitech-support-app/static/js/main.3ffd6d99.js",
     "index.html": "/scitech-support-app/index.html",
-    "main.e33c06df.js.map": "/scitech-support-app/static/js/main.e33c06df.js.map"
+    "main.3ffd6d99.js.map": "/scitech-support-app/static/js/main.3ffd6d99.js.map"
   },
   "entrypoints": [
-    "static/js/main.e33c06df.js"
+    "static/js/main.3ffd6d99.js"
   ]
 }
