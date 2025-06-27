@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "https://ehsanamiritehrani.github.io/scitech-support-app/static/js/main.efc455da.js",
+    "main.js": "https://ehsanamiritehrani.github.io/scitech-support-app/static/js/main.78551f6e.js",
     "index.html": "https://ehsanamiritehrani.github.io/scitech-support-app/index.html",
-    "main.efc455da.js.map": "https://ehsanamiritehrani.github.io/scitech-support-app/static/js/main.efc455da.js.map"
+    "main.78551f6e.js.map": "https://ehsanamiritehrani.github.io/scitech-support-app/static/js/main.78551f6e.js.map"
   },
   "entrypoints": [
-    "static/js/main.efc455da.js"
+    "static/js/main.78551f6e.js"
   ]
 }
