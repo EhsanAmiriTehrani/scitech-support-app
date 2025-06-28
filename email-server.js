@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
         user: "ehsan.uni.canberra@gmail.com",
-        pass: "uvle fbld swff jvvx" // Use your Gmail app password here
+        pass: "" // Use your Gmail app password here
     }
 });
 
