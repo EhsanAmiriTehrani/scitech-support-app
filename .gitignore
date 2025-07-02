@@ -137,3 +137,14 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+# Build folders
+dist/
+build/
+
+
+# OS/Editor files
+.DS_Store
+.vscode/
+.idea/

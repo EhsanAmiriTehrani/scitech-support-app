@@ -1,0 +1,47 @@
+{
+  "name": "sci-tech-support-app",
+  "version": "1.0.0",
+  "description": "A support application for science and technology queries.",
+  "main": "src/app.js",
+  "homepage": "https://ehsanamiritehrani.github.io/scitech-support-app",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "set GENERATE_SOURCEMAP=false && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ngrok": "^5.0.0-beta.2",
+    "nodemailer": "^7.0.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.1",
+    "react-scripts": "^5.0.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.3.0",
+    "react-app-rewired": "^2.2.1"
+  }
+}
