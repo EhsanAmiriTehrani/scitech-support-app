@@ -1,6 +1,7 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 import * as postmark from "https://esm.sh/postmark@3.0.0";
+//import { supabase } from "./supabaseClient";
 
 console.log('Function "send-email" initialized');
 

@@ -1,15 +1,89 @@
 <!-- filepath: public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SciTech Support App</title>
-</head>
-
-<body>
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="SciTech Support Application for Lab Access Requests"
+    />
+    <title>SciTech Support System</title>
+    <base href="/scitech-support-app/" />
+    
+    <!-- Preload fonts if needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- iOS meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="SciTech Support" />
+    
+    <!-- Android meta tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Manifest file -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Open Graph / Facebook meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ehsanamiritehrani.github.io/scitech-support-app/" />
+    <meta property="og:title" content="SciTech Support System" />
+    <meta property="og:description" content="Lab Access Request System for University of Canberra" />
+    
+    <!-- Twitter meta tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ehsanamiritehrani.github.io/scitech-support-app/" />
+    <meta property="twitter:title" content="SciTech Support System" />
+    <meta property="twitter:description" content="Lab Access Request System for University of Canberra" />
+  </head>
+  <body>
+    <noscript>
+      <div style="text-align: center; margin-top: 50px;">
+        <h1>JavaScript Required</h1>
+        <p>This application requires JavaScript to run. Please enable JavaScript in your browser settings.</p>
+        <p>If you're seeing this message, your browser doesn't support JavaScript or it has been disabled.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
-</body>
-
+    
+    <!-- Optional: Add loading spinner that gets removed when React mounts -->
+    <div id="loading" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: white; z-index: 9999;">
+      <div style="text-align: center;">
+        <div style="width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+        <p style="margin-top: 20px;">Loading Application...</p>
+      </div>
+    </div>
+    
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    
+    <script>
+      // Remove loading spinner when app mounts
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var loading = document.getElementById('loading');
+          if (loading) {
+            loading.style.display = 'none';
+          }
+        }, 500);
+      });
+      
+      // Handle GitHub Pages 404 redirect
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </body>
 </html>
